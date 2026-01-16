@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finance Summary</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(to right, #ece9e6, #ffffff); margin: 0; padding: 0; }
+        h1 { text-align: center; color: #2c3e50; margin-top: 20px; }
+        .summary { background-color: #ffffff; padding: 25px; border-radius: 15px; width: 80%; max-width: 900px; margin: 30px auto; box-shadow: 0px 10px 25px rgba(0,0,0,0.1); }
+        .summary p { font-size: 18px; margin: 12px 0; line-height: 1.5; }
+        .income { color: #27ae60; font-weight: bold; }
+        .expense { color: #c0392b; font-weight: bold; }
+        .savings { color: #2980b9; font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        table, th, td { border: 1px solid #ddd; }
+        th, td { padding: 12px; text-align: center; }
+        th { background-color: #34495e; color: #fff; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .budget-status { margin-top: 25px; font-size: 20px; font-weight: bold; padding: 15px; border-radius: 8px; text-align: center; }
+        .within { background-color: #dff0d8; color: #3c763d; }
+        .exceeded { background-color: #f2dede; color: #a94442; }
+        img { display: block; margin: 20px auto; max-width: 100%; border-radius: 10px; box-shadow: 0px 5px 20px rgba(0,0,0,0.15); }
+        .btn { display: inline-block; padding: 10px 20px; margin: 15px 5px 0 0; border-radius: 8px; text-decoration: none; color: #fff; background-color: #2980b9; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background-color: #1c5980; }
+        h2 { color: #2c3e50; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <h1>Finance Summary</h1>
+    <div class="summary">
+<p>Total Income: <span class='income'>₹ 29500</span></p>
+<p>Total Expense: <span class='expense'>₹ 8800</span></p>
+<p>Net Savings: <span class='savings'>₹ 20700</span></p>
+<p>Highest Income: Salary - ₹ 20000</p>
+<p>Highest Expense: Clothes Shopping - ₹ 2000</p>
+<h2>Category-wise Expenses</h2>
+<table>
+<tr><th>Category</th><th>Amount (₹)</th><th>Percentage</th></tr>
+<tr><td>Food</td><td>2500</td><td>28.4%</td></tr>
+<tr><td>Utilities</td><td>2000</td><td>22.7%</td></tr>
+<tr><td>Entertainment</td><td>600</td><td>6.8%</td></tr>
+<tr><td>Shopping</td><td>2000</td><td>22.7%</td></tr>
+<tr><td>Transport</td><td>500</td><td>5.7%</td></tr>
+<tr><td>Education</td><td>1200</td><td>13.6%</td></tr>
+</table>
+<div class='budget-status exceeded'>⚠️ You have crossed your budget!</div>
+<h2>Visualizations</h2>
+<img src='category_expenses.png' alt='Expenses by Category'>
+<img src='income_vs_expense.png' alt='Income vs Expense'>
+</div></body></html>
